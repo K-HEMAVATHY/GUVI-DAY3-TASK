@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var json = [{
+    "name" : "hema", 
+    "msg"   : "have a good day)",
+    "task" : "daily task",
+    "mail": "hemavicky27@gmail.com"
+},
+{
+    "name" : "anu", 
+    "msg"   : "hope is powerful",
+    "task" : "daily task",
+    "mail": "anu08@gmail.com"
+}];
+//for loop
+for(var i = 0; i < json.length; i++) {
+    var obj = json[i];
+
+    console.log(obj.name);
+    console.log(obj.msg);
+    console.log(obj.task);
+    console.log(obj.mail);
+
+}
+//for Each
+json.forEach(function(obj) { console.log(obj.msg); });
+
+//for In
+for (var key in json) {
+if (json.hasOwnProperty(key)) {
+  console.log(json[key].name);
+  //console.log(json[key].msg);
+ 
+}
+}
+//for Of
+let text = "";
+for (let x of json[key].name) {
+ text += x; 
+}
+ console.log(text);
+
+</script>
